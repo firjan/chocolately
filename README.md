@@ -1,4 +1,6 @@
 # chocolately
 Faça a instação do [Chocolatey](https://chocolatey.org)
 
-Execute o arquivo ps1 como administrador e seja feliz =)
+Execute o comando abaixo como administrador e seja feliz =)
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/firjan/chocolately/master/install.ps1'))
