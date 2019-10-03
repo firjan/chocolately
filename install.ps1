@@ -7,22 +7,22 @@ choco feature enable -n=allowGlobalConfirmation;
 <# programs to install #>
 @(
 "git"
-,"netfx-4.7.2-devpack"
+,"netfx-4.8-devpack"
 ,"chrome"
-,"cs-script"
 ,"dotnetcore-sdk"
 ,"cmder"
+,"hyper"
 ,"archi"
-,"nuget.commandline"
-,"dotnetcore-runtime"
 ,"dotnetcore-windowshosting"
-,"visualstudio2019buildtools"
-,"aspnetcore-runtimepackagestore"
+,"wireshark"
 ,"sql-server-management-studio"
+,"docker-desktop"
 ,"jdk11"
 ,"nodejs-lts"
 ,"soapui"
 ,"postman"
-,"notepadplusplus") + ($pins = @("vscode", "github-desktop")) | % { choco install $_ };
+,"notepadplusplus"
+,"vim"
+,"typora") + ($pins = @("vscode")) | % { choco install $_ };
 
 <# avoiding future upgrades of these following programs. #> $pins | % { choco pin add -n="$_" }; 
