@@ -23,6 +23,8 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"postman"
 ,"notepadplusplus"
 ,"vim"
-,"typora") + ($pins = @("vscode")) | % { choco install $_ };
+,"typora"
+,"winscp"
+,"putty") + ($pins = @("vscode")) | % { choco install $_ };
 
 <# avoiding future upgrades of these following programs. #> $pins | % { choco pin add -n="$_" }; 
