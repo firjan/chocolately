@@ -13,9 +13,9 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"cmder"
 ,"hyper"
 ,"archi"
-,"dotnetcore-windowshosting"
 ,"wireshark"
 ,"sql-server-management-studio"
+,"azure-data-studio"
 ,"docker-desktop"
 ,"jdk11"
 ,"nodejs-lts"
@@ -23,9 +23,8 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"postman"
 ,"notepadplusplus"
 ,"vim"
+,"sublimetext2"
 ,"typora"
-,"winscp"
-,"putty"
 ,"microsoft-teams") + ($pins = @("vscode")) | % { choco install $_ };
 
 <# avoiding future upgrades of these following programs. #> $pins | % { choco pin add -n="$_" }; 
