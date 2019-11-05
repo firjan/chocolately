@@ -10,6 +10,7 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"netfx-4.8-devpack"
 ,"chrome"
 ,"dotnetcore-sdk"
+,"visualstudio2019professional"
 ,"cmder"
 ,"hyper"
 ,"archi"
