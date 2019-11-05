@@ -23,7 +23,7 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"postman"
 ,"notepadplusplus"
 ,"vim"
-,"sublimetext2"
+,"sublimetext3"
 ,"typora"
 ,"microsoft-teams") + ($pins = @("vscode")) | % { choco install $_ };
 
