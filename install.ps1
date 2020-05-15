@@ -22,7 +22,6 @@ choco feature enable -n=allowGlobalConfirmation;
 ,"azure-data-studio"
 ,"docker-desktop"
 ,"nodejs-lts"
-,"soapui"
 ,"postman"
 ,"notepadplusplus"
 ,"vim"
